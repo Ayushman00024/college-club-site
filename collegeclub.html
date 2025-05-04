@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clubs of DCE</title>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&family=Great+Vibes&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Quicksand', sans-serif;
+      background: linear-gradient(to right, #1e3c72, #2a5298);
+      color: white;
+    }
+    header {
+      background-color: rgba(0, 0, 0, 0.2);
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    }
+    header h1 {
+      font-family: 'Great Vibes', cursive;
+      font-size: 3em;
+      color: #ffcc00;
+      animation: fadeIn 2s ease-in-out;
+    }
+    nav a {
+      margin: 0 15px;
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+      font-family: 'Great Vibes', cursive;
+    }
+    nav a:hover {
+      color: #ffcc00;
+    }
+    section {
+      padding: 40px 20px;
+    }
+    .gallery img {
+      width: 200px;
+      margin: 10px;
+      border-radius: 10px;
+      transition: transform 0.3s;
+    }
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+    form input, form textarea, form select, form button {
+      display: block;
+      margin: 10px 0;
+      padding: 10px;
+      width: 100%;
+      max-width: 400px;
+      border: none;
+      border-radius: 5px;
+    }
+    form button {
+      background: #ffcc00;
+      color: #333;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+    form button:hover {
+      background: #e6b800;
+    }
+    .container {
+      max-width: 1000px;
+      margin: auto;
+    }
+    .club-section {
+      background-color: rgba(255, 255, 255, 0.1);
+      padding: 20px;
+      border-radius: 10px;
+      margin-bottom: 20px;
+      position: relative;
+      padding-left: 80px;
+      animation: fadeInUp 1.5s ease-in;
+    }
+    .club-section img.club-icon {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background-color: white;
+      padding: 5px;
+    }
+    h2 {
+      color: #ffcc00;
+      font-family: 'Great Vibes', cursive;
+      font-size: 2.2em;
+      animation: fadeIn 1.5s ease-in-out;
+    }
+    ul {
+      padding-left: 20px;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(40px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Student Clubs - DCE</h1>
+    <nav>
+      <a href="#coding">Coding Club</a>
+      <a href="#dance">Dance Club</a>
+      <a href="#music">Music Club</a>
+      <a href="#robotics">Robotics Club</a>
+      <a href="#webdev">Web Dev Club</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#join">Join Us</a>
+    </nav>
+  </header>
+
+  <section id="coding" class="container club-section">
+    <img src="https://img.icons8.com/fluency/48/code.png" class="club-icon" alt="Coding Icon">
+    <h2>Coding Club</h2>
+    <p>We are passionate developers who organize workshops, hackathons, and coding challenges to improve problem-solving skills and technical knowledge.</p>
+    <ul>
+      <li>Hackathon 2024 - March 10th</li>
+      <li>Web Dev Bootcamp - April 5th to 10th</li>
+      <li>Weekly Coding Challenge - Every Saturday</li>
+    </ul>
+  </section>
+
+  <section id="dance" class="container club-section">
+    <img src="https://img.icons8.com/color/48/dancing.png" class="club-icon" alt="Dance Icon">
+    <h2>Dance Club</h2>
+    <p>The Dance Club at DCE celebrates rhythm and movement with performances and dance-offs that energize the campus!</p>
+    <ul>
+      <li>Flash Mob - March 20th</li>
+      <li>Annual Cultural Fest - April 25th</li>
+      <li>Weekly Choreography Sessions</li>
+    </ul>
+  </section>
+
+  <section id="music" class="container club-section">
+    <img src="https://img.icons8.com/color/48/musical-notes.png" class="club-icon" alt="Music Icon">
+    <h2>Music Club</h2>
+    <p>From classical ragas to rock jams, the Music Club is a space for talent, creativity, and collaboration. Join us and make music magic!</p>
+    <ul>
+      <li>Battle of Bands - March 18th</li>
+      <li>Open Mic Night - April 12th</li>
+      <li>Weekly Jam Sessions</li>
+    </ul>
+  </section>
+
+  <section id="robotics" class="container club-section">
+    <img src="https://img.icons8.com/color/48/robot-2.png" class="club-icon" alt="Robotics Icon">
+    <h2>Robotics Club</h2>
+    <p>The Robotics Club offers a platform for students to explore automation, AI, and robotics projects through hands-on experiments and competitions.</p>
+    <ul>
+      <li>Line Following Robot Workshop - April 8th</li>
+      <li>National Robotics Challenge - May 2nd</li>
+      <li>Weekly Build Meets</li>
+    </ul>
+  </section>
+
+  <section id="webdev" class="container club-section">
+    <img src="https://img.icons8.com/color/48/web.png" class="club-icon" alt="Web Dev Icon">
+    <h2>Web Dev Club</h2>
+    <p>Dedicated to all things web, the Web Development Club helps students learn modern frontend/backend skills and build awesome websites.</p>
+    <ul>
+      <li>React.js Crash Course - April 15th</li>
+      <li>Website Showcase Contest - May 1st</li>
+      <li>Weekly UI/UX Workshops</li>
+    </ul>
+  </section>
+
+  <section id="gallery" class="container">
+    <h2>Gallery</h2>
+    <div class="gallery">
+      <img src="https://via.placeholder.com/200x120?text=Workshop" alt="Workshop">
+      <img src="https://via.placeholder.com/200x120?text=Dance+Show" alt="Dance Show">
+      <img src="https://via.placeholder.com/200x120?text=Jam+Session" alt="Jam Session">
+    </div>
+  </section>
+
+  <section id="join" class="container">
+  <h2>Join a Club</h2>
+  <form>
+    <input type="text" placeholder="Your Name" required>
+    <input type="email" placeholder="Your Email" required>
+    <select required>
+      <option value="">Select Semester</option>
+      <option value="1">1st Semester</option>
+      <option value="2">2nd Semester</option>
+      <option value="3">3rd Semester</option>
+      <option value="4">4th Semester</option>
+      <option value="5">5th Semester</option>
+      <option value="6">6th Semester</option>
+      <option value="7">7th Semester</option>
+      <option value="8">8th Semester</option>
+    </select>
+    <select required>
+      <option value="">Select Club</option>
+      <option value="coding">Coding Club</option>
+      <option value="dance">Dance Club</option>
+      <option value="music">Music Club</option>
+      <option value="robotics">Robotics Club</option>
+      <option value="webdev">Web Dev Club</option>
+    </select>
+    <textarea placeholder="Why do you want to join?" required></textarea>
+    <button type="submit">Submit</button>
+  </form>
+</section>
+</body>
+</html>
